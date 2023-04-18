@@ -41,4 +41,25 @@ h1, h2 {
 
 #logo a:link {
     text-decoration: none;
-  }
+}
+
+/* navigation links */
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #DBC8BD;
+    font-weight: 500;
+}
