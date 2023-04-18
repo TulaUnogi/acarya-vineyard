@@ -9,4 +9,36 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    color: #FBF1EB;
+    background-color: #48494D;
 }
+
+/* headings and logo */
+
+h1, h2 {
+    font-family: 'Poiret One', Helvetica, sans-serif;
+    color: #DBC8BD;
+}
+
+#logo {
+    color: #F5E6DE;
+    float: left;
+
+}
+
+#logo h1 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    white-space: pre;
+    letter-spacing: 3px;
+    font-size: 360%;
+}
+
+#logo h2 {
+    font-family: 'Great Vibes', Helvetica, sans-serif;
+    font-size: 190%;
+}
+
+#logo a:link {
+    text-decoration: none;
+  }
