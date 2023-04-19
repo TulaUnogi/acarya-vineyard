@@ -60,11 +60,22 @@ h1, h2 {
     border-bottom: 1px solid #DBC8BD;
 }
 
-/* hero image */
+/* hero image and cover text */
+
+#cover-text, #cover-text h2 {
+    color: #FBF1EB
+}
 
 #hero-image {
     height: 740px;
     width: 100%;
-    background: url('../images/grapes-header.png');
+    background: url('../images/grapes-header.png') no-repeat;
     object-fit: scale-down;
+}
+
+#cover-text {
+    font-size: 130%
+    
+    
+
 }
