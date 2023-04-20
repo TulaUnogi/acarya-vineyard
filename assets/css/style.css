@@ -13,11 +13,27 @@ body {
     background-color: #48494D;
 }
 
+.breathing-space {
+    padding-top: 40px;
+}
+
 /* headings and logo */
 
 h1, h2 {
     font-family: 'Poiret One', Helvetica, sans-serif;
     color: #DBC8BD;
+}
+
+.underline {
+    width: 170px;
+    border-bottom: 1px solid #DBC8BD;
+    margin: auto;
+    padding-bottom: 3px;
+}
+
+.header-center {
+    font-size: 220%;
+    text-align: right;
 }
 
 #logo {
@@ -76,6 +92,8 @@ h1, h2 {
     width: 100%;
     background: url('../images/grapes-header.png') no-repeat;
     object-fit: scale-down;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 #cover-text {
@@ -92,3 +110,19 @@ h1, h2 {
     background-color: rgba(19, 17, 10, 0.7);
     text-align: left;
 }
+
+.cover-question {
+    font-size: 150%;
+}
+
+/* About us */
+
+#about-us {
+    width: 60vw;
+    height: fit-content;
+    text-align: justify;
+    padding: 50px 60px;
+    margin: auto;
+    border: 1px solid #DBC8BD;
+}
+
