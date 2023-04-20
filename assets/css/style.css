@@ -56,6 +56,11 @@ h1, h2 {
     border-bottom: 1px solid #DBC8BD;
 }
 
+.flex-menu > a {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .active {
     border-bottom: 1px solid #DBC8BD;
 }
@@ -74,8 +79,16 @@ h1, h2 {
 }
 
 #cover-text {
-    font-size: 130%
-    
-    
-
+    font-size: 130%;
+    width: 300px;
+    height: 150px;
+    border-radius: 10%;
+    position: absolute;
+    padding-top: 30px;
+    padding-left: 20px;
+    float: right;
+    bottom: 50px;
+    right: 30px;
+    background-color: rgba(19, 17, 10, 0.7);
+    text-align: left;
 }
