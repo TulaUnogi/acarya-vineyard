@@ -151,3 +151,32 @@ h1, h2 {
     float: right;
     padding: 20px;
 }
+
+/* footer */
+
+footer {
+    height: 150px;
+    width: 100%;
+    position: sticky;
+}
+
+.footer-links {    
+    text-align: center;
+}
+
+.footer-links li {
+    list-style: none;
+    display: inline;
+}
+
+.footer-links i {
+    text-decoration: none;
+    color: #bba395;
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+}
+
+.footer-links i:hover {
+    color: #FBF1EB;
+}
