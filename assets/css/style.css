@@ -123,13 +123,13 @@ h1, h2 {
     width: 60vw;
     height: fit-content;
     text-align: justify;
-    padding: 50px 60px;
+    padding: 40px 60px;
     margin: auto;
     border: 1px solid #DBC8BD;
 }
 
 .vineyard-pics {
-    width: 200px;
+    width: 150px;
     height: auto;
     border-radius: 50%;
     opacity: 0.6;
@@ -138,12 +138,14 @@ h1, h2 {
     outline: 1px solid #DBC8BD;
     outline-offset: -5px;
     padding: 10px;
+    position: relative;
+    line-height: 10px;
 }
 
 .float-left {    
     shape-outside: circle();
     float: left;
-    padding: 20px;
+    padding: 30px;
 }
 
 .float-right {
