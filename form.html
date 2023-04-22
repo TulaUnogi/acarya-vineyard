@@ -14,6 +14,9 @@
 
 <body>
     <header>
+
+        <!-- logo image -->
+
         <div id="logo">
             <h1>
                 <a href="index.html" class="flex-menu">
@@ -21,6 +24,9 @@
                 </a>
              </h1>
         </div>
+
+        <!-- navigation menu -->
+
         <nav id="menu">
             <ul class="flex-menu">               
                     <li>
@@ -35,6 +41,9 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Contact details -->
+
     <section id="contact-header">  
         <div>
         <h2 class="header-center underline">       Get in touch</h2>
@@ -54,7 +63,7 @@
                 <span class="contact-italic">email@acaryavineyard.com</span>
             </div>
         </div>
-        <div class="contact-right">
+        <div class="contact-left">
             <div>
                 <span class="contact-bold">Address:</span>
             </div>
@@ -65,46 +74,65 @@
                     <br> Poland
                 </span>
             </div>
-            <div>
+
+            <!-- Google Maps iframe -->
+
+            <div class="contact-right">
                 <iframe src="https://bit.ly/acarya-vineyard" title="ACARYA on Google Maps" frameborder="0" 
                 width="300" height="300"></iframe>
             </div>
         </div>
     </section>
-    <section>    
-        <div id="form-container">
-            <h3>What's in your mind?</h3>
-            <p>Fill up the form with your inquiry and we will get back to you shortly!</p>
-            <form method="POST" action="https://formdump.codeinstitute.net/">
-            <p>I would like to contact you in relation to:</p>
 
-             <label for="tour">Guided Tour</label>
-             <input id="tour" type="radio" name="tour_query" value="guided-tour" required> 
-             <label for="purchase">Product Purchase</label>
-             <input id="purchase" type="radio" name="product_purchase" value="product-purchase">
-             <label for="events">Special Events</label>
-             <input id="events" type="radio" name="special_events" value="special-events">
-             <label for="other">Other (specify)</label>
-             <input id="other" type="radio" name="other" value="other">
+    <!-- Contact form -->
+
+    <section> 
+        <div></div>   
+            <div id="form-container">
+                <h3>What's in your mind?</h3>
+                <p>Fill up the form with your inquiry and we will get back to you shortly!</p>
+                <form method="POST" action="https://formdump.codeinstitute.net/">
+                <p>I would like to contact you in relation to:</p>
+
+                 <label for="tour">Guided Tour</label>
+                 <input id="tour" type="radio" name="tour_query" value="guided-tour" required> 
+                 <label for="purchase">Product Purchase</label>
+                 <input id="purchase" type="radio" name="product_purchase" value="product-purchase">
+                 <label for="events">Special Events</label>
+                 <input id="events" type="radio" name="special_events" value="special-events">
+                 <label for="other">Other (specify)</label>
+                 <input id="other" type="radio" name="other" value="other">
              
-             <label for="first-name">First Name:</label>
-             <input id="first-name" type="text" name="first_name" value="first-name" required>
-             <label for="last-name">Last Name:</label>
-             <input id="last-name" type="text" name="last_name" value="last-name" required>
-             <label for= "email">Email Address:</label>
-             <input id="email" type="email" name="email_address" required>
+                <label for="first-name">First Name:</label>
+                <input id="first-name" type="text" name="first_name" value="first-name" required>
+                <label for="last-name">Last Name:</label>
+                <input id="last-name" type="text" name="last_name" value="last-name" required>
+                <label for= "email">Email Address:</label>
+                <input id="email" type="email" name="email_address" required>
 
-             <label for= "message">Your Message:</label>
-             <input id="message" type="text" name="your_message" required>
+                <label for= "message">Your Message:</label>
+                <input id="message" type="text" name="your_message" required>
 
 
-             <input type="submit" value= "Submit">
+                <input type="submit" value= "Submit">
 
             </form>
         </div>
+
+        <!-- Feedback form -->
+
+        <div>
+            <h3>Returning customer?</h3>
+            <p>Tell us how we did!</p>
+            <label for= "feedback">Type your feedback here:</label>
+             <input id="feedback" type="text" name="feedback" required>
+            <input type="submit" value= "Share Feedback">
+        </div>
+        </div>
+        </section>
     </section>
 
-   
+   <!-- Footer -->
 
     <footer>
         <ul class="footer-links">
