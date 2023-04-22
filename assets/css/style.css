@@ -251,9 +251,10 @@ footer > p {
 #contact {
     padding: 10%;
     font-size: 110%;
-    width: 40%;
-    height: 50vw;
+    width: 40vw;
+    height: 60vw;
     display: inline-block;
+    left: 30px;
 }
 
 #contact p {
@@ -271,9 +272,13 @@ footer > p {
 }
 
 .contact-left {
-    float: left;
+    float: top left;
+    text-align: left;
+    width: 40%;
 }
 
 .contact-right {
-    float: right;
+    float: top right;
+    text-align: right;
+    width: 40%;
 }
