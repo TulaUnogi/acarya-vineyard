@@ -72,11 +72,34 @@
         </div>
     </section>
     <section>    
-        <div>
+        <div id="form-container">
             <h3>What's in your mind?</h3>
             <p>Fill up the form with your inquiry and we will get back to you shortly!</p>
-            <form>
-                form
+            <form method="POST" action="https://formdump.codeinstitute.net/">
+            <p>I would like to contact you in relation to:</p>
+
+             <label for="tour">Guided Tour</label>
+             <input id="tour" type="radio" name="tour_query" value="guided-tour" required> 
+             <label for="purchase">Product Purchase</label>
+             <input id="purchase" type="radio" name="product_purchase" value="product-purchase">
+             <label for="events">Special Events</label>
+             <input id="events" type="radio" name="special_events" value="special-events">
+             <label for="other">Other (specify)</label>
+             <input id="other" type="radio" name="other" value="other">
+             
+             <label for="first-name">First Name:</label>
+             <input id="first-name" type="text" name="first_name" value="first-name" required>
+             <label for="last-name">Last Name:</label>
+             <input id="last-name" type="text" name="last_name" value="last-name" required>
+             <label for= "email">Email Address:</label>
+             <input id="email" type="email" name="email_address" required>
+
+             <label for= "message">Your Message:</label>
+             <input id="message" type="text" name="your_message" required>
+
+
+             <input type="submit" value= "Submit">
+
             </form>
         </div>
     </section>

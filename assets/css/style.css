@@ -283,3 +283,13 @@ footer > p {
     width: 40%;
 }
 
+/* contact form */
+
+#form-container {
+    float: right;
+}
+
+#form-container p {
+    font-style: italic;
+    color: #DBC8BD;
+}
