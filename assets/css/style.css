@@ -25,6 +25,13 @@ h1, h2 {
     color: #DBC8BD;
 }
 
+h3 {
+    font-family: 'Great Vibes', sans-serif;
+    color: #FBF1EB;
+    font-size: 200%;
+    font-weight: 300;
+}
+
 .underline {
     width: 180px;
     border-bottom: 1px solid #DBC8BD;
@@ -239,3 +246,34 @@ footer > p {
     left: 50%;
 }
 
+/* contact details */
+
+#contact {
+    padding: 10%;
+    font-size: 110%;
+    width: 40%;
+    height: 50vw;
+    display: inline-block;
+}
+
+#contact p {
+    font-style: italic;
+    color: #DBC8BD;
+}
+
+.contact-bold {
+    font-weight: 500;
+    color: #DBC8BD;
+}
+
+.contact-italic {
+    font-style: italic;
+}
+
+.contact-left {
+    float: left;
+}
+
+.contact-right {
+    float: right;
+}
