@@ -14,18 +14,6 @@ body {
     background-color: #48494D;
     max-width: 100%;
     min-height: 100%;
-    padding-bottom: 15%;
-
-}
-
-.grapes-background {
-    background: url('../images/grapes-header.png') no-repeat bottom;
-    bottom: 0;
-    
-}
-
-.breathing-space {
-    padding-top: 40px;
 }
 
 /* headings and logo */
@@ -58,6 +46,11 @@ h3 {
 .logo img {
     padding-top: 10px;
     padding-left: 30px;
+}
+
+.logo-small img {
+    width: 30%;
+    height: auto;
 }
 
 /* navigation links */
@@ -152,6 +145,10 @@ h3 {
     top: 150px;
 }
 
+.breathing-space {
+    padding-top: 40px;
+}
+
 .underline-about {
     width: 180px;
     border-bottom: 1px solid #DBC8BD;
@@ -189,13 +186,13 @@ h3 {
 /* footer */
 
 #footer-bottom {
-    height: 15%;
+    height: fit-content;
     width: 100%;
     display: block;
-    margin-top: 10%;
     position: relative;
     bottom: 0;
     background-color: rgba(19, 17, 10, .6);
+    z-index: 1;
 }
 
 #footer-bottom > p {
@@ -208,7 +205,7 @@ h3 {
 .footer-links {    
     text-align: center;
     display: block;
-    height: 10%;
+    height: 7%;
 }
 
 .footer-links li {
@@ -221,7 +218,7 @@ h3 {
     color: #bba395;
     font-size: 160%;
     margin: 1%;
-    padding: 5%;
+    padding: 1% 5%;
 }
 
 .footer-links i:hover {
@@ -266,18 +263,30 @@ h3 {
     left: 50%;
 }
 
+/* Contact Us background */
+
+.grapes-background {
+    background: url('../images/grapes-header.png') no-repeat bottom;
+    bottom: 0;
+    width: 100vw;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+}
+
+
 /* contact details */
 
 #contact-sections {
     width: 80vw;
-    max-height: 30vh;
+    max-height: 70vh;
     height: fit-content;    
     display: inline-block;
     text-align: center;
     padding: 8%;
     position: relative;
     font-size: 90%;
-    margin-top: -2%;
+    margin-top: -5%;
 }
 
 .contact {
@@ -288,15 +297,8 @@ h3 {
     float: left;
     position: relative;
     background-color: rgba(19, 17, 10, 0.7);
-    border-radius: 10%;    
-}
-
-.get-in-touch {
-    width: 100vw;
-    height: fit-content;
-    text-align: right;
-    position: relative;
-    top: 30vh;
+    border-radius: 10%;  
+    margin-bottom: -3%;  
 }
 
 .contact-header {
@@ -354,7 +356,7 @@ iframe {
     height: auto;
 }
 
-/* Contact form & feedback */
+/* Contact form */
 
 form p {
     margin-top: 5%;
@@ -367,7 +369,7 @@ form p {
     font-weight: 600;
 }
 
-.form-feedback {
+.form {
     width: 35vw;
     height: fit-content;
     padding: 2%;
@@ -388,6 +390,7 @@ form p {
 
 .message-box input {
     width: 65%;
+    overflow: scroll;
 }
 
 #message {
@@ -396,4 +399,19 @@ form p {
 
 .radio {
     font-size: 80%;
+    text-align: left;
+}
+
+#submit {
+    width: 6vw;
+    height: 5vh;
+    font-family: 'Poiret One';
+    font-weight: 600;
+    font-size: 110%;    
+    background-color: rgba(244, 205, 166, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10%;
+    overflow: visible;
+    padding: 1%;
 }
