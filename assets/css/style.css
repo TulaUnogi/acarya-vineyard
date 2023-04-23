@@ -13,7 +13,15 @@ body {
     color: #FBF1EB;
     background-color: #48494D;
     max-width: 100%;
+    min-height: 100%;
+    padding-bottom: 15%;
 
+}
+
+.grapes-background {
+    background: url('../images/grapes-header.png') no-repeat bottom;
+    bottom: 0;
+    
 }
 
 .breathing-space {
@@ -98,13 +106,13 @@ h3 {
 }
 
 .hero-image-crop {
-    height: 55vw;
+    height: 55vh;
     width: 100vw;
     max-width: 100%;
     max-height: 100%;
     background: url('../images/grapes-header.png') no-repeat top;
     object-fit: cover;
-    margin-bottom: -20vw;
+    margin-bottom: -20vh;
     margin-left: 0;
     position: relative;    
     overflow: hidden;
@@ -117,9 +125,9 @@ h3 {
     height: auto;
     border-radius: 10%;
     position: absolute;
-    padding: 2vw;
+    padding: 2%;
     float: right;
-    bottom: 5vw;
+    bottom: 5vh;
     right: 3vw;
     background-color: rgba(19, 17, 10, 0.7);
     text-align: left;
@@ -137,7 +145,7 @@ h3 {
     width: 60vw;
     height: fit-content;
     text-align: justify;
-    padding: 3vw 5vw;
+    padding: 3vh 5vw;
     margin: auto;
     border: 1px solid #DBC8BD;
     position: relative;
@@ -180,22 +188,27 @@ h3 {
 
 /* footer */
 
-footer {
-    height: 150px;
+#footer-bottom {
+    height: 15%;
     width: 100%;
+    display: block;
+    margin-top: 10%;
     position: relative;
-    top: 150px;
+    bottom: 0;
+    background-color: rgba(19, 17, 10, .6);
 }
 
-footer > p {
-    color: #bba395;
-    margin-bottom: 20px;
+#footer-bottom > p {
+    color: #BBA395;
     padding: 5px;
     text-align: center;
+    font-size: 60%;
 }
 
 .footer-links {    
     text-align: center;
+    display: block;
+    height: 10%;
 }
 
 .footer-links li {
@@ -220,8 +233,8 @@ footer > p {
 
 .products-heading {
     position: relative;
-    top: 10;
-    height: 5vw;
+    top: 10%;
+    height: 5%;
     width: auto;
     margin-top: 7%;
 }
@@ -255,36 +268,50 @@ footer > p {
 
 /* contact details */
 
+#contact-sections {
+    width: 80vw;
+    max-height: 30vh;
+    height: fit-content;    
+    display: inline-block;
+    text-align: center;
+    padding: 8%;
+    position: relative;
+    font-size: 90%;
+}
+
 .contact {
     width: 35vw;
-    margin-bottom: 20vw;
-    height: 0vw;
-    padding: 3vw;
+    height: fit-content;
+    padding: 2%;
     display: inline;
     float: left;
     position: relative;
-    
+    background-color: rgba(19, 17, 10, 0.7);
+    border-radius: 10%;    
 }
 
-.contact-header {
+.get-in-touch {
     width: 100vw;
     height: fit-content;
     text-align: right;
-    padding: 5px;
+    position: relative;
+    top: 30vh;
 }
 
-.contact-header h2 {
-    margin-top: 30vw;
-}
-
-.contact-details {
+.contact-header {
     font-size: 111%;
     width: fit-content;
     height: fit-content;
-    max-height: 5vw;
+    max-height: 5vh;
     margin: auto;
     text-align: center;
     padding: 5px;
+}
+
+.contact-header p {
+    font-style: italic;
+    color: #DBC8BD;
+    font-weight: 400;
 }
 
 .underline-contact {
@@ -295,7 +322,7 @@ footer > p {
 }
 
 .contact-bold {
-    font-weight: 500;
+    font-weight: 600;
     color: #DBC8BD;
 }
 
@@ -314,24 +341,25 @@ footer > p {
 iframe {
     margin: auto;
     width: 30vw;
-    height: 20vw;
+    height: 20vh;
     text-align: center;
     padding: 2vw;
     float: none;
 }
 
-.form-p {
-    font-style: italic;
-    color: #DBC8BD;
-}
+/* Contact form & feedback */
 
-/* contact form */
-
-.form-container {
+.form-feedback {
+    width: 35vw;
+    height: fit-content;
+    padding: 2%;
+    display: inline;
     float: right;
+    position: relative;
+    background-color: rgba(19, 17, 10, 0.7);
+    border-radius: 10%;   
 }
 
-.form-container p {
-    font-style: italic;
-    color: #DBC8BD;
+.feedback {
+
 }
