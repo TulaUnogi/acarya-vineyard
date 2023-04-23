@@ -230,18 +230,32 @@ h3 {
 
 .products-heading {
     position: relative;
-    top: 10%;
-    height: 5%;
-    width: auto;
-    margin-top: 7%;
+    top: 17vh;
+    height: fit-content;
+    width: 100%;
+    display: block;
 }
+
+.products-heading h2 {
+    width: 40vw;
+    height: 10vh;
+}
+
+.underline-products {
+    width: 230px;
+    border-bottom: 1px solid #DBC8BD;
+    margin: auto;
+    padding-bottom: 3px;
+    text-align: right;
+}
+
 
 /* products pictures and hover effect*/
 
 .products {
     display: inline;
     margin: 5%;
-    
+    top: 25vh;    
 }
 
 .products img {
@@ -255,12 +269,62 @@ h3 {
     outline: 1px solid #DBC8BD;
     outline-offset: -20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+    display: inline;
 }
 
+.red {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: inline;
+}
 .red h3 {
     position: absolute;
     top: 50%;
     left: 50%;
+}
+
+.white {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: inline;
+}
+.white h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.rose {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: inline;
+}
+
+.rose h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.meed {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: inline;
+}
+
+.meed h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.description {
+    padding: 5%;
+    text-align: justify;
 }
 
 /* Contact Us background */
