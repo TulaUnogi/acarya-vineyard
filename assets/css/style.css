@@ -356,6 +356,17 @@ iframe {
 
 /* Contact form & feedback */
 
+form p {
+    margin-top: 5%;
+    max-height: 2vh;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    text-transform: uppercase;
+    font-size: 80%;
+    color: #DBC8BD;
+    font-weight: 600;
+}
+
 .form-feedback {
     width: 35vw;
     height: fit-content;
@@ -364,5 +375,25 @@ iframe {
     float: right;
     position: relative;
     background-color: rgba(19, 17, 10, 0.7);
-    border-radius: 10%;   
+    border-radius: 10%;
+}
+
+.message-box {
+    width: 70%;
+    height: fit-content;
+    padding: 3%;
+    border: 1px solid #BBA395;
+    margin: auto;
+}
+
+.message-box input {
+    width: 65%;
+}
+
+#message {
+    height: 10vh;
+}
+
+.radio {
+    font-size: 80%;
 }
