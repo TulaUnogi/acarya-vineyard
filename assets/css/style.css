@@ -277,6 +277,7 @@ h3 {
     padding: 8%;
     position: relative;
     font-size: 90%;
+    margin-top: -2%;
 }
 
 .contact {
@@ -299,7 +300,7 @@ h3 {
 }
 
 .contact-header {
-    font-size: 111%;
+
     width: fit-content;
     height: fit-content;
     max-height: 5vh;
@@ -312,6 +313,7 @@ h3 {
     font-style: italic;
     color: #DBC8BD;
     font-weight: 400;
+    font-size: 80%;
 }
 
 .underline-contact {
@@ -331,20 +333,25 @@ h3 {
 }
 
 .contact-left {
-    float: left;
-    text-align: left;
+    text-align: center;
     width: 20vw;
     height: fit-content;
     display: inline-block;
+    padding: 5%;
+    margin: auto;
+}
+
+.contact-map {
+    margin: auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
 }
 
 iframe {
-    margin: auto;
+    margin: 5%;
     width: 30vw;
-    height: 20vh;
-    text-align: center;
-    padding: 2vw;
-    float: none;
+    height: auto;
 }
 
 /* Contact form & feedback */
@@ -358,8 +365,4 @@ iframe {
     position: relative;
     background-color: rgba(19, 17, 10, 0.7);
     border-radius: 10%;   
-}
-
-.feedback {
-
 }
