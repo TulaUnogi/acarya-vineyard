@@ -249,22 +249,10 @@ h3 {
 
 .products {
     display: inline-block;
-    margin: 5%;
-    top: 25vh;    
-}
-
-.products img {
-    height: 60vh;
-    width: auto;
-    padding: 5px;
-    position: relative;
-    opacity: 0.7;
-    border: 1px solid #DBC8BD;
-    border-radius: 10%;
-    outline: 1px solid #DBC8BD;
-    outline-offset: -20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
-    display: inline-block;
+    bottom: 30vh;
+    width: 100vw;
+    height: 62vh;
+    margin: auto;   
 }
 
 .red {
@@ -272,7 +260,7 @@ h3 {
     background-size: contain;
     height: 59vh;
     width: 19vw;
-    padding: 5px;
+    padding: 1%;
     position: relative;
     opacity: 0.7;
     border: 1px solid #DBC8BD;
@@ -284,8 +272,10 @@ h3 {
 }
 .red h3 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    color: rgba(19, 17, 10, 0.7);
+    text-align: center;
+    margin: auto;
+
 }
 
 .white {
@@ -305,8 +295,9 @@ h3 {
 }
 .white h3 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    color: rgba(19, 17, 10, 0.7);
+    text-align: center;
+    margin: auto;
 }
 
 .rose {
@@ -327,8 +318,9 @@ h3 {
 
 .rose h3 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    color: rgba(19, 17, 10, 0.7);
+    text-align: center;
+    margin: auto;
 }
 
 .mead {
@@ -349,20 +341,37 @@ h3 {
 
 .mead h3 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    color: rgba(19, 17, 10, 0.7);
+    text-align: center;
+    margin: auto;
+
 }
 
-.description ul {
-    padding: 2%;
-    text-align: justify;
-    font-size: 80%;
-    height: 25vh;
-    width: fit-content;
-    position: absolute;
-    opacity: 0.7;
-    background-color: blue;
+.description {
+    padding: 15%;
+    margin: auto;
+    text-align: center;
+    
 }
+
+.description p {
+    font-size: 90%;
+    top: 50%;
+    bottom: 50%;
+    font-weight: 400;
+    opacity: 0;
+    z-index: 1;
+}
+
+.red:hover, .white:hover, .rose:hover, .mead:hover {
+    background: linear-gradient(#7f6a5d, #BBA395);
+}
+
+.description p:hover {
+    opacity: 1;
+    color: rgb(19, 17, 10);
+}
+
 
 /* Contact Us background */
 
