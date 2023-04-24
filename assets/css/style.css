@@ -36,16 +36,19 @@ h3 {
 }
 
 .logo {
-    line-height: 75px;
+    
     float: left;
     text-decoration: none;
     position: relative;
     z-index: 3;
+    display: block;
 }
 
 .logo img {
     padding-top: 10px;
     padding-left: 30px;
+    height: 26vh;
+    width: fit-content;
 }
 
 .logo-small img {
@@ -65,7 +68,7 @@ h3 {
 
 .menu li {
     list-style-type: none;
-    margin-right: 30px;
+    margin-right: 3%;
     float: right;  
 }
 
@@ -90,7 +93,7 @@ h3 {
 }
 
 .hero-image {
-    margin-bottom: 1vw;
+    margin-bottom: 40vh;
 }
 
 .hero-image-crop {
@@ -133,15 +136,17 @@ h3 {
     width: 60vw;
     height: fit-content;
     text-align: justify;
+    bottom: 15vh;
     padding: 3vh 5vw;
     margin: auto;
     border: 1px solid #DBC8BD;
     position: relative;
-    top: 150px;
+    display: block;
 }
 
 .breathing-space {
-    padding-top: 40px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .underline-about {
