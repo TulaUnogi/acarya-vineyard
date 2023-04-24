@@ -79,11 +79,6 @@ h3 {
     border-bottom: 1px solid #DBC8BD;
 }
 
-.flex-menu > a {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 .active {
     border-bottom: 1px solid #DBC8BD;
 }
@@ -238,14 +233,14 @@ h3 {
 
 .products-heading h2 {
     width: 40vw;
-    height: 10vh;
+    height: 6vh;
 }
 
 .underline-products {
     width: 230px;
     border-bottom: 1px solid #DBC8BD;
     margin: auto;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
     text-align: right;
 }
 
@@ -253,14 +248,14 @@ h3 {
 /* products pictures and hover effect*/
 
 .products {
-    display: inline;
+    display: inline-block;
     margin: 5%;
     top: 25vh;    
 }
 
 .products img {
-    height: auto;
-    width: 20%;
+    height: 60vh;
+    width: auto;
     padding: 5px;
     position: relative;
     opacity: 0.7;
@@ -269,14 +264,23 @@ h3 {
     outline: 1px solid #DBC8BD;
     outline-offset: -20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
-    display: inline;
+    display: inline-block;
 }
 
 .red {
-    width: fit-content;
-    height: fit-content;
+    background: url('../images/red-wine.jpg') no-repeat center;
+    background-size: contain;
+    height: 59vh;
+    width: 19vw;
+    padding: 5px;
     position: relative;
-    display: inline;
+    opacity: 0.7;
+    border: 1px solid #DBC8BD;
+    border-radius: 10%;
+    outline: 1px solid #DBC8BD;
+    outline-offset: -20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+    display: inline-block;
 }
 .red h3 {
     position: absolute;
@@ -285,10 +289,19 @@ h3 {
 }
 
 .white {
-    width: fit-content;
-    height: fit-content;
+    background: url('../images/white-wine.jpg') no-repeat center;
+    background-size: contain;
+    height: 59vh;
+    width: 19vw;
+    padding: 5px;
     position: relative;
-    display: inline;
+    opacity: 0.7;
+    border: 1px solid #DBC8BD;
+    border-radius: 10%;
+    outline: 1px solid #DBC8BD;
+    outline-offset: -20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+    display: inline-block;
 }
 .white h3 {
     position: absolute;
@@ -297,10 +310,19 @@ h3 {
 }
 
 .rose {
-    width: fit-content;
-    height: fit-content;
+    background: url('../images/rose-wine.jpg') no-repeat center;
+    background-size: contain;
+    height: 59vh;
+    width: 19vw;
+    padding: 5px;
     position: relative;
-    display: inline;
+    opacity: 0.7;
+    border: 1px solid #DBC8BD;
+    border-radius: 10%;
+    outline: 1px solid #DBC8BD;
+    outline-offset: -20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+    display: inline-block;
 }
 
 .rose h3 {
@@ -309,22 +331,37 @@ h3 {
     left: 50%;
 }
 
-.meed {
-    width: fit-content;
-    height: fit-content;
+.mead {
+    background: url('../images/mead.jpg') no-repeat center;
+    background-size: contain;
+    height: 59vh;
+    width: 19vw;
+    padding: 5px;
     position: relative;
-    display: inline;
+    opacity: 0.7;
+    border: 1px solid #DBC8BD;
+    border-radius: 10%;
+    outline: 1px solid #DBC8BD;
+    outline-offset: -20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+    display: inline-block;
 }
 
-.meed h3 {
+.mead h3 {
     position: absolute;
     top: 50%;
     left: 50%;
 }
 
-.description {
-    padding: 5%;
+.description ul {
+    padding: 2%;
     text-align: justify;
+    font-size: 80%;
+    height: 25vh;
+    width: fit-content;
+    position: absolute;
+    opacity: 0.7;
+    background-color: blue;
 }
 
 /* Contact Us background */
