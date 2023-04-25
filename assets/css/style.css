@@ -56,7 +56,7 @@ h1 {
 }
 
 .logo-small img {
-    width: 30%;
+    width: 50%;
     height: auto;
 }
 
@@ -229,17 +229,24 @@ h1 {
 
 /* products heading */
 
+.products-h2 {
+    display: block;
+    width: 100vw;
+    position: relative;
+}
+
 .products-heading {
     position: relative;
     top: 17vh;
     height: fit-content;
-    width: 100%;
+    width: 100vw;
     display: block;
 }
 
 .products-heading h2 {
     width: 40vw;
     height: 6vh;
+    text-align: right;
 }
 
 .underline-products {
@@ -254,19 +261,28 @@ h1 {
 /* products pictures and hover effect*/
 
 .products {
-    display: inline-block;
-    bottom: 30vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    position: relative;
+    top: 10h;
     width: 100vw;
     height: 62vh;
-    margin: auto;   
+    margin-left: auto;
+    margin-top: 15%;   
+}
+
+.products > p {
+    max-height: inherit;
 }
 
 .red {
     background: url('../images/red-wine.jpg') no-repeat center;
-    background-size: contain;
+    background-size: cover;
     height: 59vh;
     width: 19vw;
-    padding: 1%;
+    padding: 5px;
     position: relative;
     opacity: 0.7;
     border: 1px solid #DBC8BD;
@@ -275,6 +291,7 @@ h1 {
     outline-offset: -20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
     display: inline-block;
+    margin: 2%;
 }
 .red h3 {
     position: absolute;
@@ -286,7 +303,7 @@ h1 {
 
 .white {
     background: url('../images/white-wine.jpg') no-repeat center;
-    background-size: contain;
+    background-size: cover;
     height: 59vh;
     width: 19vw;
     padding: 5px;
@@ -298,6 +315,7 @@ h1 {
     outline-offset: -20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
     display: inline-block;
+    margin: 2%;
 }
 .white h3 {
     position: absolute;
@@ -308,7 +326,7 @@ h1 {
 
 .rose {
     background: url('../images/rose-wine.jpg') no-repeat center;
-    background-size: contain;
+    background-size: cover;
     height: 59vh;
     width: 19vw;
     padding: 5px;
@@ -320,6 +338,7 @@ h1 {
     outline-offset: -20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
     display: inline-block;
+    margin: 2%;
 }
 
 .rose h3 {
@@ -331,7 +350,7 @@ h1 {
 
 .mead {
     background: url('../images/mead.jpg') no-repeat center;
-    background-size: contain;
+    background-size: cover;
     height: 59vh;
     width: 19vw;
     padding: 5px;
@@ -343,6 +362,7 @@ h1 {
     outline-offset: -20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
     display: inline-block;
+    margin: 2%;
 }
 
 .mead h3 {
@@ -353,11 +373,21 @@ h1 {
 
 }
 
+.card-hover {
+    margin-top: 50%;
+    opacity: 0;
+
+}
+
+.card-hover:hover {
+    opacity: 1;
+}
+
 .description {
     padding: 15%;
     margin: auto;
     text-align: center;
-    
+    position: absolute;
 }
 
 .description p {
@@ -367,6 +397,8 @@ h1 {
     font-weight: 400;
     opacity: 0;
     z-index: 1;
+    position: relative;
+    
 }
 
 .red:hover, .white:hover, .rose:hover, .mead:hover {
