@@ -50,7 +50,6 @@
                 
             </header>
         
-
             <!-- Contact details -->
 
             <div id="contact-sections">
@@ -79,14 +78,14 @@
                             <div>
 
                                 <div>
-                                    <span class="contact-bold">Address:</span>
+                                    <div class="contact-bold">Address:</div>
                                 </div>
                                 <div>
-                                    <span class="contact-italic">
-                                        Gabriela Narutowicza 8
-                                        <br> 33-180 Gromnik
-                                        <br> Poland
-                                    </span>
+                                    <div class="contact-italic">
+                                        <p>Narutowicza 8</p> 
+                                        <p>33-180 Gromnik</p>
+                                        <p> Poland</p>
+                                    </div>
                                 </div>
 
                             </div>
@@ -94,7 +93,8 @@
                             <!-- Google Maps iframe -->
 
                             <div class="contact-map">
-                                <iframe src="https://bit.ly/acarya-vineyard" title="ACARYA on Google Maps" frameborder="0"></iframe>
+                                <iframe style="height:100%;width:100%;border:0;" frameborder="0" 
+                                src="https://www.google.com/maps/embed/v1/place?q=Gabriela+Narutowicza+8,+33-180+Gromnik,+Poland&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
                             </div>
                         
                     </div>
@@ -142,7 +142,7 @@
                                         <label for= "email">Email Address:</label>
                                         <input id="email" type="email" name="email_address" required>
                                         <label for= "message">Your Message:</label>
-                                        <input id="message" type="text" name="your_message" required class="textfield">                                                  
+                                        <textarea id="message" type="text" name="your_message" required rows="6"></textarea>                                                  
                 
                                         <input type="submit" value= "Submit" id="submit">
 
