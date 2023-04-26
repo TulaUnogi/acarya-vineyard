@@ -624,15 +624,16 @@ input[type="radio"] {
         width: 100vw;
         margin: auto;
         float: none;
+        top: 100%;
     }
 
     .products {
         flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        width: 80%;
         margin-top: 50%;
+        max-height: 20%;
 
     }
 

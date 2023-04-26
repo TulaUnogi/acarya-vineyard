@@ -65,3 +65,14 @@ This is the main website for ACARYA Vineyard & Winery.
 1. [Figma](https://www.figma.com/files/recent?fuid=1228098703522495310)
     -Figma was used for the early design planning.
 
+- ## Known Bugs:
+
+1. On screens smaller than 1082px footer is overlapping the bottom elements on the contact and products page.
+1. On screens smaller than 1022px the heading on a products page is overlapping the other elements stopping the menu from working.
+1. On screens smaller than 1022px footer is overlapping the form page.
+
+- ## Future development:
+
+1. Hamburger menu on smaller screens.
+2. Improved media query to improve layout and funcionality on smaller screens.
+3. Adding an additional feedback, events and testimonials sections.
