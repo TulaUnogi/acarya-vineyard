@@ -51,5 +51,17 @@ This is the main website for ACARYA Vineyard & Winery.
         - rose-wine.jpg- Photo by Maria Orlova from pexels.com
         - mead.jpg- Photo by Mona Miller on unsplash.com
 
-
+- ## Frameworks, Libraries & Programs Used
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the Poiret One, Great Vibes and Montserrat fonts into the style.css file which are used on all pages throughout the project.
+1. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome has been used to import the social media icons in the footer.
+1. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod and Codeanywhere terminals to commit to Git and Push to GitHub.
+1. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+1. [GIMP 2.10.34](https://www.gimp.org/)
+    - GIMP was used to create the logo and for the edition of the pictures.
+1. [Figma](https://www.figma.com/files/recent?fuid=1228098703522495310)
+    -Figma was used for the early design planning.
 
