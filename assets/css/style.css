@@ -220,6 +220,7 @@ h1 {
     font-size: 160%;
     margin: 1%;
     padding: 1% 5%;
+    z-index: 5;
 }
 
 .footer-links i:hover {
@@ -246,14 +247,14 @@ h1 {
 .products-heading h2 {
     width: 40vw;
     height: 6vh;
-    text-align: right;
+    text-align: center;
 }
 
 .underline-products {
     width: 230px;
     border-bottom: 1px solid #DBC8BD;
     margin: auto;
-    padding-bottom: 2px;
+    padding-bottom: 1%;
     text-align: right;
 }
 
@@ -266,7 +267,6 @@ h1 {
     flex-wrap: wrap;
     align-content: flex-end;
     position: relative;
-    top: 10h;
     width: 100vw;
     height: 62vh;
     margin-left: auto;
@@ -293,10 +293,10 @@ h1 {
     display: inline-block;
     margin: 2%;
 }
+
 .red h3 {
     position: absolute;
     color: rgba(19, 17, 10, 0.7);
-    text-align: center;
     margin: auto;
 
 }
@@ -320,7 +320,6 @@ h1 {
 .white h3 {
     position: absolute;
     color: rgba(19, 17, 10, 0.7);
-    text-align: center;
     margin: auto;
 }
 
@@ -344,7 +343,6 @@ h1 {
 .rose h3 {
     position: absolute;
     color: rgba(19, 17, 10, 0.7);
-    text-align: center;
     margin: auto;
 }
 
@@ -368,19 +366,7 @@ h1 {
 .mead h3 {
     position: absolute;
     color: rgba(19, 17, 10, 0.7);
-    text-align: center;
     margin: auto;
-
-}
-
-.card-hover {
-    margin-top: 50%;
-    opacity: 0;
-
-}
-
-.card-hover:hover {
-    opacity: 1;
 }
 
 .description {
@@ -391,14 +377,12 @@ h1 {
 }
 
 .description p {
-    font-size: 90%;
-    top: 50%;
-    bottom: 50%;
+    font-size: 85%;
+    margin-top: 25%;
     font-weight: 400;
     opacity: 0;
     z-index: 1;
-    position: relative;
-    
+    position: relative;    
 }
 
 .red:hover, .white:hover, .rose:hover, .mead:hover {
@@ -449,7 +433,7 @@ h1 {
     margin-bottom: -3%;  
 }
 
-.contact-header {
+.contact-heading {
 
     width: fit-content;
     height: fit-content;
@@ -459,7 +443,7 @@ h1 {
     padding: 5px;
 }
 
-.contact-header p {
+.contact-heading p {
     font-style: italic;
     color: #DBC8BD;
     font-weight: 400;
@@ -573,3 +557,111 @@ input[type="radio"] {
     padding: 1%;
     margin-top: 2%;
 }
+
+/* For screen sizes from 1441px width down */
+
+@media screen and (max-width:1441px) {
+    
+    .underline-products {
+        padding-bottom: 2%;
+        height: 4vh;
+    }
+
+}
+
+/* For screen sizes from 1082px width down */
+
+@media screen and (max-width: 1082px) {
+
+    .underline-products {
+        padding-bottom: 8%;
+    }
+
+    .underline-products > h2, .underline-about h2 {
+        font-size: 100%;
+
+    }
+
+    .products {
+        margin-top: 30vh;
+    }
+    
+/* For screen sizes from 1022px width down */
+
+@media screen and (max-width: 1022px) {
+
+    .logo {
+        width: 100vw;
+        display: inline-block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .about-us {
+        width: 80vw;
+    }
+
+    .about-pics {
+        float: none;
+        margin: auto;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .cover-text {
+        float: none;
+        margin: auto;
+        width: 70%;
+        height: 50%
+        display: block;
+        text-align: center;
+    }
+
+    menu > li {
+        display: block;
+        width: 100vw;
+        margin: auto;
+        float: none;
+    }
+
+    .products {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin-top: 50%;
+
+    }
+
+    .underline-products {
+        padding-top: 5%;
+        top: 20%;
+    }
+
+    .underline-products > h2, .underline-about h2 {
+        font-size: 100%;
+
+    }
+
+    .form {
+        display: block;
+        width: 80vw;
+        margin-bottom: 10vh;
+    }
+
+    .contact {
+        display: block;
+        width: 80vw;
+        margin-bottom: 10vh;
+    }
+
+    .contact-sections {
+        height: 80%;
+        overflow: auto;
+    }
+
+   
+}
+
