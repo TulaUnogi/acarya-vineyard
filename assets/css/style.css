@@ -12,8 +12,14 @@ body {
     letter-spacing: 2px;
     color: #FBF1EB;
     background-color: #48494D;
-    max-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.page-container {
     min-height: 100vh;
+    max-width: 100vw;
 }
 
 /* headings and logo */
@@ -96,16 +102,11 @@ h1 {
     color: #FBF1EB
 }
 
-.hero-image {
-    margin-bottom: 40vh;
-}
-
 .hero-image-crop {
     height: 55vh;
     width: 100vw;
     background: url('../images/grapes-header.png') no-repeat top;
     object-fit: cover;
-    margin-left: 0;
     top: 19vh;
     position: relative;    
     overflow: hidden;
@@ -137,17 +138,22 @@ h1 {
     width: 60vw;
     height: fit-content;
     text-align: justify;
+    top: 30vh;
     bottom: 15vh;
     padding: 3vh 5vw;
-    margin: auto;
+    margin: 2vh auto 40vh auto;
     border: 1px solid #DBC8BD;
     position: relative;
     display: block;
 }
 
+.header-home {
+    padding-bottom: 3%;
+}
+
 .breathing-space {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 4%;
+    height: fit-content;
 }
 
 .underline-about {
@@ -187,31 +193,46 @@ h1 {
 /* footer */
 
 #footer-bottom {
-    height: fit-content;
-    width: 100%;
-    display: block;
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
-    bottom: 0;
+    bottom: 0vh;
     background-color: rgba(19, 17, 10, .6);
     z-index: 1;
 }
 
 #footer-bottom > p {
     color: #BBA395;
-    padding: 5px;
-    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: center;  
+    align-content: flex-end;
     font-size: 60%;
 }
 
 .footer-links {    
-    text-align: center;
-    display: block;
-    height: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1%;
+    list-style: none;
+}
+
+.footer-links ul {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .footer-links li {
-    list-style: none;
-    display: inline;
+    display: flex;
 }
 
 .footer-links i {
@@ -219,8 +240,8 @@ h1 {
     color: #bba395;
     font-size: 160%;
     margin: 1%;
-    padding: 1% 5%;
-    z-index: 5;
+    padding: 1% 2%;
+
 }
 
 .footer-links i:hover {
