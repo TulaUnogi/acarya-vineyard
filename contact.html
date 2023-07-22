@@ -90,34 +90,54 @@
                         <div class="form-container">
 
                             <!-- Form heading -->
-                            <div class="contact-header">
+                            <div class="contact-heading">
                                 <h3>What's in your mind?</h3>
                                 <p>Fill up the form with your inquiry and we will get back to you shortly!</p>
                             </div>
 
                             <div class="message">
                                 <form method="POST" action="https://formdump.codeinstitute.net/">
-                                    <p>I would like to contact you in relation to:</p>                                    
-                                    <div class="radio">
-                                        <label for="tour">Guided Tour</label>
-                                        <input id="tour" type="radio" name="reason" value="guided-tour" required> 
-                                        <label for="purchase">Product Purchase</label>
-                                        <input id="purchase" type="radio" name="reason" value="product-purchase">
-                                        <label for="events">Special Events</label>
-                                        <input id="events" type="radio" name="reason" value="special-events">
-                                        <label for= "feedback">Feedback</label>
-                                        <input id="feedback" type="radio" name="reason">
-                                        <label for="other">Other</label>
-                                        <input id="other" type="radio" name="reason" value="other">
-                                    </div> 
+                                    <div class="form-left">
+                                        <p>I would like to contact you in relation to:</p> 
+                                        <div class="radio-boxes">                               
+                                            <div class="radio">                    
+                                                <input id="tour" type="radio" name="reason" value="guided-tour" required>
+                                                <label for="tour">Guided Tour</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input id="purchase" type="radio" name="reason" value="product-purchase">
+                                                <label for="purchase">Product Purchase</label>                                        
+                                            </div>
+                                            <div class="radio">
+                                                <input id="events" type="radio" name="reason" value="special-events">
+                                                <label for="events">Special Events</label>                                
+                                            </div>
+                                            <div class="radio">
+                                                <input id="feedback" type="radio" name="reason">
+                                                <label for= "feedback">Feedback</label>                                        
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="other"  name="reason" value="other">
+                                                <label for="other">Other</label>                                        
+                                            </div> 
+                                        </div>
+                                    </div>
                                     <div class="message-box">
-                                        <label for="name">Your Name:</label>
-                                        <input id="name" type="text" name="your_name" required> 
-                                        <label for= "email">Email Address:</label>
-                                        <input id="email" type="email" name="email_address" required>
-                                        <label for= "message">Your Message:</label>
-                                        <textarea id="message" type="text" name="your_message" required rows="6"></textarea>                                   
-                                        <input type="submit" value= "Submit" id="submit">
+                                        <div class="contact-spacings">
+                                            <label for="name">Your Name:</label>
+                                            <input id="name" type="text" name="your_name" required> 
+                                        </div>
+                                        <div class="contact-spacings">
+                                            <label for= "email">Email Address:</label>
+                                            <input id="email" type="email" name="email_address" required>
+                                        </div>
+                                        <div class="contact-spacings">
+                                            <label for= "message">Your Message:</label>
+                                            <textarea id="message" name="your_message" required rows="10"></textarea> 
+                                        </div>
+                                        <div class="contact-spacings">                                 
+                                            <input type="submit" value= "Submit" id="submit">
+                                        </div>
                                     </div>
                                 </form>
                             </div>
