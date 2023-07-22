@@ -169,7 +169,6 @@ h1 {
     height: auto;
     border-radius: 50%;
     opacity: 0.6;
-
     border: 1px solid #FBF1EB;
     outline: 1px solid #DBC8BD;
     outline-offset: -5px;
@@ -179,13 +178,13 @@ h1 {
 }
 
 .float-left {    
-    shape-outside: circle();
+    shape-outside: circle(50%);
     float: left;
     padding: 30px;
 }
 
 .float-right {
-    shape-outside: circle();
+    shape-outside: circle(50%);
     float: right;
     padding: 20px;
 }
