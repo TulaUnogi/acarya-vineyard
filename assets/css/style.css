@@ -66,26 +66,50 @@ h1 {
     height: auto;
 }
 
+.nav-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 10rem;
+}
+
 /* navigation links */
 
 .menu {
+    height: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-end;
+    flex-direction: row;
     font-size: 110%;
     letter-spacing: 2px;
     text-transform: uppercase;
     line-height: 132px;
     z-index: 2;
+    position: relative;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 60vw;
 }
 
 .menu li {
+    display: flex;
     list-style-type: none;
-    margin-right: 3%;
-    float: right;  
+    margin-right: 3%;  
+    width: fit-content;
 }
 
 .menu a {
     text-decoration: none;
     color: #DBC8BD;
     font-weight: 500;
+    max-height: 5rem;
 }
 
 .menu a:hover {
@@ -94,6 +118,7 @@ h1 {
 
 .active {
     border-bottom: 1px solid #DBC8BD;
+    max-height: 5rem;
 }
 
 /* hero image and cover text */
@@ -681,4 +706,4 @@ input[type="radio"] {
         height: 80%;
         overflow: auto;
     }
-}
+} 
