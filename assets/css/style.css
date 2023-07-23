@@ -321,117 +321,142 @@ h1 {
 
 .products {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: flex-end;
+    flex-direction: row;
     position: relative;
-    width: 100vw;
-    height: 62vh;
-    margin-left: auto;
-    margin-top: 15%;   
+    justify-content: space-evenly;
+    margin: 10% auto;
 }
 
-.products > p {
-    max-height: inherit;
+.products-flex {
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+
 }
 
-.red {
-    background: url('../images/red-wine.jpg') no-repeat center;
-    background-size: cover;
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
     height: 59vh;
     width: 19vw;
-    padding: 5px;
+    perspective: 1000px;
+}
+
+.product-inner {
     position: relative;
+    text-align: center;
+    height: 59vh;
+    width: 19vw;
+    transition: transform 1.0s;
+    transform-style: preserve-3d;
+}
+
+.product:hover .product-inner {
+    transform: rotateY(180deg);
+}
+  
+.product-front,
+.product-back, .red {
+    position: absolute;
+    height: 59vh;
+    width: 19vw;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.product-front {
+    height: 60vh;
+    width: 20vw;
+    padding: 5px;
+    position: absolute;
     opacity: 0.7;
     border: 1px solid #DBC8BD;
     border-radius: 10%;
     outline: 1px solid #DBC8BD;
     outline-offset: -20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
-    display: inline-block;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.7), 4px 0 8px 0 rgba(0, 0, 0, 0.6);
     margin: 2%;
 }
 
-.red h3 {
+.product-back {
+    background-image: linear-gradient(75deg, #463930, #7f6a5d, #47372d);
+    color: #FBF1EB;
+    text-shadow: 1px 1px 8px #000000;
+    height: 60vh;
+    width: 20vw;
+    padding: 5px;
     position: absolute;
-    color: rgba(19, 17, 10, 0.7);
-    margin: auto;
+    opacity: 0.7;
+    border: 1px solid #DBC8BD;
+    border-radius: 10%;
+    outline: 1px solid #DBC8BD;
+    outline-offset: -20px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.7), 4px 0 8px 0 rgba(0, 0, 0, 0.6);
+    margin: 2% ;
+    transform: rotateY(180deg);
+  }
+  
+  .product-back p {
+    margin: 10%;
+  }
 
+.product-back b {
+    font-size: 1.5em;
+    font-family: 'Poiret One', Helvetica, sans-serif;
+    color: #e8dbd4;
+    text-shadow: 1px 2px 4px #000000;
+       
+}
+
+.product-back em {
+    font-family: 'Great Vibes', sans-serif;
+    text-decoration: underline;
+    text-underline-offset: -1em;
+    text-decoration-thickness: 1.1px; 
+}
+
+.red {
+    background: url('../images/red-wine.jpg') no-repeat center;
+    background-size: cover;    
+}
+
+.product h3 {
+    position: absolute;
+    font-size: 260%;
+    text-align: center;
+    color: #FBF1EB;
+    margin: -10% auto 100% auto;
+    text-shadow: 1px 1px 3px #1f1f21;
+}
+
+.mead h3, .white h3 {
+    color: #5e5854;
 }
 
 .white {
     background: url('../images/white-wine.jpg') no-repeat center;
     background-size: cover;
-    height: 59vh;
-    width: 19vw;
-    padding: 5px;
-    position: relative;
-    opacity: 0.7;
-    border: 1px solid #DBC8BD;
-    border-radius: 10%;
-    outline: 1px solid #DBC8BD;
-    outline-offset: -20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
-    display: inline-block;
-    margin: 2%;
-}
-.white h3 {
-    position: absolute;
-    color: rgba(19, 17, 10, 0.7);
-    margin: auto;
 }
 
 .rose {
     background: url('../images/rose-wine.jpg') no-repeat center;
     background-size: cover;
-    height: 59vh;
-    width: 19vw;
-    padding: 5px;
-    position: relative;
-    opacity: 0.7;
-    border: 1px solid #DBC8BD;
-    border-radius: 10%;
-    outline: 1px solid #DBC8BD;
-    outline-offset: -20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
-    display: inline-block;
-    margin: 2%;
-}
-
-.rose h3 {
-    position: absolute;
-    color: rgba(19, 17, 10, 0.7);
-    margin: auto;
 }
 
 .mead {
     background: url('../images/mead.jpg') no-repeat center;
     background-size: cover;
-    height: 59vh;
-    width: 19vw;
-    padding: 5px;
-    position: relative;
-    opacity: 0.7;
-    border: 1px solid #DBC8BD;
-    border-radius: 10%;
-    outline: 1px solid #DBC8BD;
-    outline-offset: -20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
-    display: inline-block;
-    margin: 2%;
 }
 
-.mead h3 {
-    position: absolute;
-    color: rgba(19, 17, 10, 0.7);
-    margin: auto;
-}
 
 .description {
     padding: 15%;
     margin: auto;
     text-align: center;
     position: absolute;
+    background-color: #7f6a5d;
 }
 
 .description p {
