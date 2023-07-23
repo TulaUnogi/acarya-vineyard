@@ -138,25 +138,26 @@ h1 {
 .hero-image-crop {
     height: 70vh;
     width: 100vw;
-    background: url('../images/grapes-header.png') no-repeat top;
-    object-fit: cover;
-    background-position: 0 0;  
+    background: url('../images/grapes-header.png') no-repeat center top;
+    object-fit: cover;  
     top: 10vh;
     position: relative;    
     overflow: hidden;
+    border-bottom: 3px solid #BBA395;
     animation-name: hero-image-zoom;
     animation-duration: 4s;
-    animation-fill-mode: backwards;
+    animation-fill-mode: forwards;
+
 }
 
 /* Adds animation to the hero image*/
 
 @keyframes hero-image-zoom {
     from{
-        transform: scale(1.07);
+        transform: scale(1.08);
     }
     to{
-        transform: scale(1);
+        transform: scale(1.04);
     }
 }
 
@@ -358,7 +359,7 @@ h1 {
 }
   
 .product-front,
-.product-back, .red {
+.product-back {
     position: absolute;
     height: 59vh;
     width: 19vw;
@@ -371,7 +372,7 @@ h1 {
     width: 20vw;
     padding: 5px;
     position: absolute;
-    opacity: 0.9;
+    opacity: 0.95;
     border: 1px solid #DBC8BD;
     border-radius: 10%;
     outline: 1px solid #DBC8BD;
@@ -459,32 +460,17 @@ h1 {
     background-color: #7f6a5d;
 }
 
-.description p {
-    font-size: 85%;
-    margin-top: 25%;
-    font-weight: 400;
-    opacity: 0;
-    z-index: 1;
-    position: relative;    
-}
-
 .red:hover, .white:hover, .rose:hover, .mead:hover {
     background: linear-gradient(#7f6a5d, #BBA395);
 }
 
-.description p:hover {
-    opacity: 1;
-    color: rgb(19, 17, 10);
-}
-
-
-/* Contact Us background */
+/* Contact Us & background */
 
 .grapes-background {
     background: url('../images/grapes-header.png') no-repeat bottom fixed;
+    background-size: contain;
     bottom: 0;
     width: 100vw;
-    object-fit: cover;
     background-position: 0 50vh;    
     position: relative;
     z-index: 0;
@@ -514,6 +500,10 @@ h1 {
     float: right;
     position: relative;
     background-color: rgba(19, 17, 10, 0.7);
+    /* From https://css.glass/ */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);    
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border-radius: 10%;  
     margin-bottom: -3%;  
 }
@@ -588,6 +578,9 @@ iframe {
     flex-direction: column;
     position: relative;
     background-color: rgba(19, 17, 10, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border-radius: 10%;
 }
 
