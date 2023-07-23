@@ -177,6 +177,7 @@ h1 {
     bottom: 5vh;
     right: 3vw;
     background-color: rgba(19, 17, 10, 0.7);
+    backdrop-filter: blur(8px);
     text-align: left;
     z-index: 2;
     letter-spacing: 0em;
