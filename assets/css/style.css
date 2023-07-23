@@ -38,6 +38,10 @@ h3 {
 
 .header-center {
     font-size: 220%;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 0.2em;
 }
 
 .logo {
@@ -197,20 +201,12 @@ h1 {
 }
 
 .header-home {
-    padding-bottom: 3%;
+    margin: 3%
 }
 
 .breathing-space {
     padding: 4%;
     height: fit-content;
-}
-
-.underline-about {
-    width: 180px;
-    border-bottom: 1px solid #DBC8BD;
-    margin: auto;
-    padding-bottom: 3px;
-    text-align: right;
 }
 
 .vineyard-pics {
@@ -301,30 +297,23 @@ h1 {
 
 .products-h2 {
     display: block;
-    width: 100vw;
     position: relative;
 }
 
 .products-heading {
     position: relative;
     top: 17vh;
-    height: fit-content;
-    width: 100vw;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .products-heading h2 {
     width: 40vw;
     height: 6vh;
     text-align: center;
-}
-
-.underline-products {
-    width: 230px;
-    border-bottom: 1px solid #DBC8BD;
-    margin: auto;
-    padding-bottom: 1%;
-    text-align: right;
+    margin: 3% 50%;
 }
 
 
@@ -669,7 +658,7 @@ input[type="radio"] {
     }
 
     .about-us {
-        width: 80vw;
+        width: 80vw;        
     }
 
     .about-pics {
