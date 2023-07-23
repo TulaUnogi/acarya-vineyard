@@ -43,23 +43,25 @@ This is the main website for ACARYA Vineyard & Winery.
     - Imagery is crucial, as it gives the first impression of what ACARYA's website is about. The hero image represents clusters of freshly picked white grapes, which corresponds with the main line of the business. The warm colours of the picture are in perfect harmony with the website's colour scheme.
 
 #### Wireframes:
-    Wireframes have been created with a use of [Figma](https://www.figma.com/)
+
+Wireframes have been created with a use of [Figma](https://www.figma.com/)
 
     - About Us page:
 
-    ![Index page wireframe](assets/images/acarya-wireframe-about.png)
+![Index page wireframe](assets/images/acarya-wireframe-about.png)
 
     - Products page:
 
-    ![Products page wireframe](assets/images/acarya-wireframe-products.png)
+![Products page wireframe](assets/images/acarya-wireframe-products.png)
 
     - Contact page:
 
-    ![Contact page wireframe](assets/images/acarya-wireframe-contact.png)
+![Contact page wireframe](assets/images/acarya-wireframe-contact.png)
         
 ## Languages Used:
-    - [HTML5] (https://en.wikipedia.org/wiki/HTML5)
-    - [CSS3] (https://en.wikipedia.org/wiki/CSS)
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
 
 ## Credits:
 
@@ -75,8 +77,8 @@ This is the main website for ACARYA Vineyard & Winery.
 
 ### Code:
 
-    - Blur effect code from [css.glass by miketromba](https://css.glass/)
-    - Solution for hero image animation not working properly from [here](https://blog.hubspot.com/website/css-animation-not-working)
+- Blur effect code from [css.glass by miketromba](https://css.glass/)
+- Solution for hero image animation not working properly from [here](https://blog.hubspot.com/website/css-animation-not-working)
 
 ### Other Acknowledgements:
 
@@ -87,16 +89,27 @@ This is the main website for ACARYA Vineyard & Winery.
 ## Frameworks, Libraries & Programs Used
 
 1. [Google Fonts:](https://fonts.google.com/)
+
     - Google fonts were used to import the Poiret One, Great Vibes and Montserrat fonts into the style.css file which are used on all pages throughout the project.
+
 2. [Font Awesome:](https://fontawesome.com/)
+
     - Font Awesome has been used to import the social media icons in the footer.
+
 3. [Git](https://git-scm.com/)
+
     - Git was used for version control by utilizing the Gitpod and Codeanywhere terminals to commit to Git and Push to GitHub.
+    
 4. [GitHub:](https://github.com/)
+
     - GitHub is used to store the projects code after being pushed from Git.
+
 5. [GIMP 2.10.34](https://www.gimp.org/)
+
     - GIMP was used to create the logo and for the edition of the pictures.
+
 6. [Figma](https://www.figma.com/files/recent?fuid=1228098703522495310)
+
     -Figma was used for the early design planning.
 
 ## Known Bugs:
