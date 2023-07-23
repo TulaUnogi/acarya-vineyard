@@ -451,10 +451,11 @@ h1 {
 /* Contact Us background */
 
 .grapes-background {
-    background: url('../images/grapes-header.png') no-repeat bottom;
+    background: url('../images/grapes-header.png') no-repeat bottom fixed;
     bottom: 0;
     width: 100vw;
     object-fit: cover;
+    background-position: 0 50vh;    
     position: relative;
     z-index: 0;
 }
