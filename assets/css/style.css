@@ -6,6 +6,10 @@
     border: none;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -50,6 +54,7 @@ h3 {
     justify-content: flex-start; 
     position: relative;
     z-index: 3;
+    width: 20vw;
     margin: 1vh 1vw 0 1vw;
     transform: scale(0.8);
 }
@@ -132,6 +137,10 @@ h1 {
 .active {
     border-bottom: 1px solid #DBC8BD;
     max-height: 5rem;
+}
+
+.ham-menu { 
+    display: none; 
 }
 
 /* hero image */
@@ -662,45 +671,11 @@ input[type="radio"] {
     margin-top: 2%;
 }
 
-/* For screen sizes from 1441px width down */
-
-@media screen and (max-width:1441px) {
-    
-    .underline-products {
-        padding-bottom: 2%;
-        height: 4vh;
-    }
-
-}
-
-/* For screen sizes from 1082px width down */
-
-@media screen and (max-width: 1082px) {
-
-    .underline-products {
-        padding-bottom: 8%;
-    }
-
-    .underline-products > h2, .underline-about h2 {
-        font-size: 100%;
-
-    }
-
-    .products {
-        margin-top: 30vh;
-    }
-}
+/* Media queries */
 
 /* For screen sizes from 1022px width down */
 
-@media screen and (max-width: 1022px) {
-
-    .logo {
-        width: 100vw;
-        display: inline-block;
-        margin: auto;
-        text-align: center;
-    }
+@media screen and (max-width: 1024px) {
 
     .about-us {
         width: 80vw;        
@@ -709,7 +684,6 @@ input[type="radio"] {
     .about-pics {
         float: none;
         margin: auto;
-        width: 100%;
         display: block;
         text-align: center;
     }
@@ -717,18 +691,10 @@ input[type="radio"] {
     .cover-text {
         float: none;
         margin: auto;
-        width: 70%;
-        height: 50%;
+        width: 40vw;
+        height: 20vh;
         display: block;
         text-align: center;
-    }
-
-    menu > li {
-        display: block;
-        width: 100vw;
-        margin: auto;
-        float: none;
-        top: 100%;
     }
 
     .products {
@@ -741,18 +707,7 @@ input[type="radio"] {
 
     }
 
-    .underline-products {
-        padding-top: 5%;
-        top: 20%;
-    }
-
-    .underline-products > h2, .underline-about h2 {
-        font-size: 100%;
-
-    }
-
     .form {
-        display: block;
         width: 80vw;
         margin-bottom: 10vh;
     }
@@ -767,4 +722,218 @@ input[type="radio"] {
         height: 80%;
         overflow: auto;
     }
+
+    .logo {
+        width: 20vw;
+    }
 } 
+
+@media screen and (max-width: 900px) {
+
+    .nav-logo {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0 auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}
+
+/* For iPads, tablets */
+
+@media screen and (max-width: 768px) {
+
+    .cover-padding {
+        padding: 5%;
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .cover-text {
+        width: 100vw;
+        height: 20vh;
+        font-size: 100%;
+        right: unset;
+        padding: 0;
+        overflow-wrap: break-word;
+        border-radius: 0;
+    }
+
+    /* Hamburger menu for small screens 
+    from https://alvarotrigo.com/blog/hamburger-menu-css-responsive/ 
+    
+    TO BE FIXED*/
+
+    .main-menu {
+        display: hidden;
+    }
+
+    .logo a {
+        transform: scale(0.5);
+        
+    }
+
+    .logo {
+        height: 5vh;
+        width: fit-content;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .nav-logo {
+        background-color: rgba(19, 17, 10, 0.7);
+        backdrop-filter: blur(8px);
+        height: 15vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        z-index: 5;
+        position: sticky;
+    }
+
+    .navigation > a {
+        text-align: right;
+        margin-right: 20vw;
+        box-sizing: border-box;
+        display: block;
+        float: left;
+        width: fit-content;
+        border-top: 1px solid #c3b5a4;
+    }
+
+    .navigation > label { 
+        display: inline-block; 
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 5%;        
+    }
+
+    .list-box ul {
+        max-width: 800px;
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        padding: 0px;
+        z-index: 9;
+    }
+
+    .ham-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .35s, visibility .35s, height .35s;
+        overflow: hidden;
+        background: black;
+        z-index: -1;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .menu-hamburger {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        display: none;
+        border: none;
+        padding: 0px;
+        margin: 0px;
+        background-color: #bba395;
+        
+    }
+
+    .menu-hamburger, .navigation {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 200px;
+        height: 100%;
+        background-color: rgba(19, 17, 10, 0.4);
+        backdrop-filter: blur(16px);
+        transition: 0.3s;
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }
+
+    .menu-list li {
+        line-height: 3rem;    
+    }
+
+    #hamburger:checked + .menu-hamburger + .navigation {
+        display: inline;
+        visibility: visible;
+        left: 0;
+    }
+
+    #menu-hamburger {
+        display: inline;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        display: none;
+        border: none;
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Cabin', Sans-serif;
+        background: linear-gradient(
+            to bottom, 
+            #BBA395, #BBA395 20%, 
+            rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 40%, 
+            #BBA395 40%, #BBA395 60%, 
+            rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 80%, 
+            #BBA395 80%, #BBA395 100%
+        );
+    }
+}
+
+/* Mobile devices up to 480px width */
+
+@media screen and (max-width: 480px) {
+
+    .hero-image-crop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .about-us {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .picture-1, .picture-2, .picture-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vineyard-pics {
+        display: block;
+        margin: 0 auto;
+    } 
+
+}
+

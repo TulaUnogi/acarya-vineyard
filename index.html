@@ -28,14 +28,32 @@
                     </div>
                     
                     <!-- Navigation menu -->
-                    <div class="menu">    
+                    <div class="menu main-menu">                
                         <nav>
                             <ul class="menu-list">
-                                <li><a href="index.html" class="active">About Us</a></li>
-                                <li><a href="our-products.html">Our Products</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>                           
+                                <li><a href="index.html">About Us</a></li>
+                                <li><a href="our-products.html" class="active">Our Products</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </nav>
+                    </div>
+
+                    <!-- Hamburger menu -->
+                    <div class="menu ham-menu">                        
+                        <input type="checkbox" id="hamburger"/>
+                        <label for="hamburger" class="menu-hamburger">
+                            <nav class="navigation">                     
+                                <!-- Regular menu -->                                
+                                <div class="list-box">
+                                    <ul class="menu-list">
+                                        <li><a href="index.html" class="active">About Us</a></li>
+                                        <li><a href="our-products.html">Our Products</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>                           
+                                    </ul>
+                                </div>    
+                            </nav>
+                        </label>  
+                        <div class="ham-overlay"></div>
                     </div>
                     
                 </div>            
@@ -45,8 +63,10 @@
             <section>        
                 <div class="hero-image-crop">                
                     <div class="cover-text">
-                        <h2 class="cover-question">Thirsty for a new <em>experience?</em></h2>
-                        <p>Discover Polish wines from our winery in Gromnik!</p>
+                        <div class="cover-padding">
+                            <h2 class="cover-question">Thirsty for a new <em>experience?</em></h2>
+                            <p>Discover Polish wines from our winery in Gromnik!</p>
+                        </div>
                     </div>
                 </div>            
             </section>
@@ -60,7 +80,7 @@
                     <div>
 
                         <!--Picture 1 and description-->
-                        <div>
+                        <div class="picture-1">
                             <span class="float-left about-pics">
                                 <img src="assets/images/vineyard-uphill.jpg" alt="Dark grapes maturing on the vine" class="vineyard-pics">
                             </span>
@@ -73,7 +93,7 @@
                         </div>   
                         
                         <!--Picture 2 and description-->
-                        <div>
+                        <div class="picture-2">
                             <span class="float-right about-pics">
                                 <img src="assets/images/wine-pouring.jpg" alt="A man pouring wine into glass" class="vineyard-pics">
                             </span>  
@@ -88,7 +108,7 @@
                         </div> 
 
                         <!--Picture 3 and description-->
-                        <div>
+                        <div class="picture-3">
                             <span class="float-left about-pics"> 
                                 <img src="assets/images/grape-hand.jpg" alt="Male hand holding a grape cluster" class="vineyard-pics">
                             </span>
