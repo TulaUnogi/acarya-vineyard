@@ -677,6 +677,8 @@ input[type="radio"] {
 
 @media screen and (max-width: 1024px) {
 
+    /* About us page */
+
     .about-us {
         width: 80vw;        
     }
@@ -697,6 +699,8 @@ input[type="radio"] {
         text-align: center;
     }
 
+    /* Products page */
+
     .products {
         flex-direction: column;
         flex-wrap: nowrap;
@@ -707,25 +711,7 @@ input[type="radio"] {
 
     }
 
-    .form {
-        width: 80vw;
-        margin-bottom: 10vh;
-    }
-
-    .contact {
-        display: block;
-        width: 80vw;
-        margin-bottom: 10vh;
-    }
-
-    .contact-sections {
-        height: 80%;
-        overflow: auto;
-    }
-
-    .logo {
-        width: 20vw;
-    }
+    
 } 
 
 @media screen and (max-width: 900px) {
@@ -741,6 +727,35 @@ input[type="radio"] {
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
+    }
+
+    /* Contact us page*/
+
+    .contact-sections {
+        flex-direction: column;
+        width: 100vw;
+    }    
+
+    .form {
+        width: 100vw;
+        height: fit-content;
+        margin: 5vh 0;
+        border-radius: 0;
+    }
+
+    .contact {
+        margin: 0;
+        width: 100vw;
+        border-radius: 0;
+        margin: 10vh 0;
+    }
+
+    #submit {
+        width: 20vw;
+    }
+
+    .logo {
+        width: 20vw;
     }
 }
 
@@ -767,6 +782,8 @@ input[type="radio"] {
         overflow-wrap: break-word;
         border-radius: 0;
     }
+
+    /* */
 
     /* Hamburger menu for small screens 
     from https://alvarotrigo.com/blog/hamburger-menu-css-responsive/ 
