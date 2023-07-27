@@ -161,7 +161,11 @@ The website has been tested in multiple ways, that included:
 
 6. [Figma](https://www.figma.com/files/recent?fuid=1228098703522495310)
 
-    -Figma was used for the early design planning.
+    - Figma was used for the early design planning.
+
+7. [Am I Responsive?](https://ui.dev/amiresponsive)
+
+    - Am I Responsive has been used to present different breakpoints of the website.
 
 ## Known Bugs:
 
