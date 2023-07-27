@@ -718,6 +718,10 @@ input[type="radio"] {
 
     /* Products page*/
 
+    .products-container {
+        top: 40vh !important;
+    }
+
     .products-flex {
         width: 100vw;
         background-color: rgba(19, 17, 10, 0.7);
@@ -762,143 +766,71 @@ input[type="radio"] {
     }
 
     .products-heading {
-        top: 2vh;
+        top: 25vh;
         font-size: smaller;
-        margin-bottom: 10vh;
     }
 
+    /* Menu */
 
-    /* Hamburger menu for small screens 
-    from https://alvarotrigo.com/blog/hamburger-menu-css-responsive/ 
-    
-    TO BE FIXED*/
-
-    .main-menu {
-        display: hidden;
+    .menu {
+        margin: 3vh 0;
+        padding: 0;
     }
 
     .logo a {
-        transform: scale(0.5);
-        
+        transform: scale(0.5);        
     }
 
     .logo {
-        height: 5vh;
+        height: 7vh;
         width: fit-content;
         position: relative;
-        margin: 0 auto;
+        top: 0        
     }
 
     .nav-logo {
+        height: 12vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: sticky;
+        margin-bottom: 10vh;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 6vh;
+    }
+
+    .menu-list > li {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        width: 100vw;
+        text-align: center;
         background-color: rgba(19, 17, 10, 0.7);
         backdrop-filter: blur(8px);
-        height: 15vh;
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        z-index: 5;
-        position: sticky;
     }
 
-    .navigation > a {
-        text-align: right;
-        margin-right: 20vw;
-        box-sizing: border-box;
-        display: block;
-        float: left;
-        width: fit-content;
-        border-top: 1px solid #c3b5a4;
+    .active {
+        border-bottom: none;
+        background-color: rgba(105, 105, 105, 0.7);
+        backdrop-filter: blur(8px);
+        width: 100vw;
     }
 
-    .navigation > label { 
-        display: inline-block; 
-        font-style: normal;
-        font-size: 1.2em;
-        padding: 5%;        
+    /* Product page */
+
+    .products-heading {
+        height: 30vh;
     }
 
-    .list-box ul {
-        max-width: 800px;
-        width: 100%;
-        height: 100%;
-        margin: 0px auto;
-        padding: 0px;
-        z-index: 9;
-    }
+    /* Contact page*/
 
-    .ham-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity .35s, visibility .35s, height .35s;
-        overflow: hidden;
-        background: black;
-        z-index: -1;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    .menu-hamburger {
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        width: 50px;
-        height: 50px;
-        display: none;
-        border: none;
-        padding: 0px;
-        margin: 0px;
-        background-color: #bba395;        
-    }
-
-    .menu-hamburger, .navigation {
-        visibility: hidden;
-        position: fixed;
-        top: 0;
-        left: -250px;
-        width: 200px;
-        height: 100%;
-        background-color: rgba(19, 17, 10, 0.4);
-        backdrop-filter: blur(16px);
-        transition: 0.3s;
-        padding: 0px 10px;
-        box-sizing: border-box;
-    }
-
-    .menu-list li {
-        line-height: 3rem;    
-    }
-
-    .hamburger:checked + .menu-hamburger + .navigation {
-        display: inline;
-        visibility: visible;
-        left: 0;
-    }
-
-    .menu-hamburger {
-        display: inline;
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        width: 50px;
-        height: 50px;
-        display: none;
-        border: none;
-        padding: 0px;
-        margin: 0px;
-        font-family: 'Cabin', Sans-serif;
-        background: linear-gradient(to bottom, 
-            #BBA395, #BBA395 20%, 
-            rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 40%, 
-            #BBA395 40%, #BBA395 60%, 
-            rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 80%, 
-            #BBA395 80%, #BBA395 100%);
+    .contact {
+        top: 25vh;
     }
 }
 
@@ -965,8 +897,6 @@ input[type="radio"] {
     .cover-text {
         width: 40vw;
     }
-
-
 
     /* Products page */
 
