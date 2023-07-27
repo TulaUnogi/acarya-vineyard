@@ -821,6 +821,16 @@ input[type="radio"] {
         width: 100vw;
     }
 
+    /* About Us*/
+
+    .hero-image-crop {
+        top: 30vh;
+    }
+
+    .about-us {
+        top: 35vh;    
+    }
+
     /* Product page */
 
     .products-heading {

@@ -114,9 +114,7 @@ Wireframes have been created with a use of [Figma](https://www.figma.com/)
 
 ## Known Bugs:
 
-- On screens smaller than 1082px footer is overlapping the bottom elements on the contact and products page.
-- On screens smaller than 1022px the heading on a products page is overlapping the other elements stopping the menu from working.
-- On screens smaller than 1022px footer is overlapping the form page.
+- 
 
 ## Future development:
 
